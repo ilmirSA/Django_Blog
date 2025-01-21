@@ -3,20 +3,20 @@
 {% block title %} Sensive Blog - Home {% endblock %}
 {% block content %}
 
-  <main class="site-main">
-    <!--================Hero Banner start =================-->
-    <section class="mb-30px">
-      <div class="container">
-        <div class="hero-banner">
-          <div class="hero-banner__content">
-            <h3>Tours &amp;Travels</h3>
-            <h1>Amazing Places on earth</h1>
-            <h4>December 12, 2018</h4>
-          </div>
+<main class="site-main">
+  <!--================Hero Banner start =================-->
+  <section class="mb-30px">
+    <div class="container">
+      <div class="hero-banner">
+        <div class="hero-banner__content">
+          <h3>Tours &amp;Travels</h3>
+          <h1>Amazing Places on earth</h1>
+          <h4>December 12, 2018</h4>
         </div>
       </div>
-    </section>
-    <!--================Hero Banner end =================-->
+    </div>
+  </section>
+  <!--================Hero Banner end =================-->
   <!--================ Start Blog Post Area =================-->
   <section>
     <div class="container">
@@ -61,7 +61,8 @@
             <div class="details mt-20">
               <h3>{{ fresh_post.title }}</h3>
               <p>{{ fresh_post.text|truncatechars:200 }}</p>
-              <a class="button" href="{% url 'post_detail' slug=fresh_post.slug %}">Read More <i class="ti-arrow-right"></i></a>
+              <a class="button" href="{% url 'post_detail' slug=fresh_post.slug %}">Read More <i
+                class="ti-arrow-right"></i></a>
             </div>
           </div>
           {% endfor %}
@@ -117,4 +118,4 @@
       </div>
     </div>
   </section>
-{% endblock %}
+  {% endblock %}
