@@ -28,7 +28,7 @@
                 {% if post.image_url %}
                 <img class="card-img rounded-0" src="{{ post.image_url }}" alt="most popular posts picture">
                 {% else %}
-                <img class="card-img rounded-0" src="{% static 'images/blog/blog-slider/blog.png' %}"
+                <img class="card-img rounded-0" src="{% static 'images/blog/blog.png' %}"
                   alt="most popular posts default picture">
                 {% endif %}
               </div>
@@ -55,7 +55,7 @@
                 {% if post.image_url %}
                 <img class="img-fluid" src="{{ post.image_url }}" alt="post picture">
                 {% else %}
-                <img class="img-fluid" src="{% static 'images/blog/blog-slider/blog.png' %}" alt="post default picture">
+                <img class="img-fluid" src="{% static 'images/blog/blog.png' %}" alt="post default picture">
                 {% endif %}
                 <ul class="thumb-info" style="max-width: 550px;">
                   <li><a href="#"><i class="ti-user"></i>{{ post.author }}</a></li>
