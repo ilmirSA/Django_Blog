@@ -26,10 +26,9 @@
               <div class="card blog__slide text-center">
                 <div class="blog__slide__img">
                   {% if post.image_url %}
-                  <img class="card-img rounded-0" src="{{ post.image_url }}" alt="most popular posts picture">
+                    <img class="card-img rounded-0" src="{{ post.image_url }}" alt="most popular posts picture">
                   {% else %}
-                  <img class="card-img rounded-0" src="{% static 'images/blog/blog.png' %}"
-                    alt="most popular posts default picture">
+                    <img class="card-img rounded-0" src="{% static 'images/blog/blog.png' %}" alt="most popular posts default picture">
                   {% endif %}
                 </div>
                 <div class="blog__slide__content">
